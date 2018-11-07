@@ -10,6 +10,10 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet var showNumberButton: NSButton!
+    @IBOutlet var valueLabel: NSTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,9 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func showRandomNumber(_ sender: Any) {
+    
+    }
+    
 }
 
