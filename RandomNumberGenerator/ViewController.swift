@@ -27,8 +27,18 @@ class ViewController: NSViewController {
     }
 
     @IBAction func showRandomNumber(_ sender: Any) {
-    
+        let randomValue = generateRandomNumber()
+        updateLabel(value: randomValue)
     }
     
+    func generateRandomNumber() -> Int {
+        let minValue = 0
+        let maxValue = 99
+        return Int.random(in: minValue...maxValue)
+    }
+    
+    func updateLabel(value: Int) {
+        valueLabel.stringValue = value.description
+    }
 }
 
